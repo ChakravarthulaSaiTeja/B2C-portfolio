@@ -7,7 +7,7 @@ echo "📦 Staging all files..."
 git add -A
 
 echo "💾 Committing changes..."
-git commit -m "Production ready: B2C Advertisers portfolio website" || echo "No changes to commit or already committed"
+git commit -m "Fix TypeScript build error and production ready: B2C Advertisers portfolio website" || echo "No changes to commit or already committed"
 
 echo "🔗 Setting up remote..."
 git remote remove origin 2>/dev/null

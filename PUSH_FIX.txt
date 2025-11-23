@@ -1,0 +1,11 @@
+# Push the TypeScript fix to GitHub
+# Copy and paste these commands into your terminal:
+
+cd "/Users/saitejachakravarthula/Desktop/B2C ads/b2c-nextjs"
+
+git add components/sections/Hero.tsx
+
+git commit -m "Fix TypeScript build error in Hero component - Add Variants type and ease array type assertions"
+
+git push origin main
+

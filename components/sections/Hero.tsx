@@ -13,7 +13,7 @@
 
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
@@ -43,7 +43,7 @@ const splitText = (text: string) => text.split(' ')
  * Animation variants for individual words
  * Each word fades in and moves up with a staggered delay
  */
-const wordVariants = {
+const wordVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
     opacity: 1,
@@ -51,7 +51,7 @@ const wordVariants = {
     transition: {
       delay: i * 0.1, // 0.1s delay between each word
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1], // Custom easing for smooth animation
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number], // Custom easing for smooth animation
     },
   }),
 }
@@ -60,7 +60,7 @@ const wordVariants = {
  * Animation variants for subtitle
  * Fades in with scale and upward movement
  */
-const subtitleVariants = {
+const subtitleVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   visible: {
     opacity: 1,
@@ -69,7 +69,7 @@ const subtitleVariants = {
     transition: {
       delay: 0.8, // Start after title animation
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
     },
   },
 }
