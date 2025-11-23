@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# B2C Advertisers - Portfolio Website
 
-## Getting Started
+A modern, responsive Next.js portfolio website for B2C Advertisers - a leading advertising agency in Hyderabad since 2007.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Clean, professional, and futuristic UI with glassmorphism effects
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Performance Optimized**: Next.js 16 with Image optimization and code splitting
+- **Smooth Animations**: Framer Motion and GSAP for engaging user experience
+- **SEO Friendly**: Proper metadata, Open Graph tags, and semantic HTML
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16.0.3
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion, GSAP
+- **Icons**: Lucide React
+- **Forms**: React Hook Form + Zod validation
+- **Carousel**: Swiper.js
+
+## 📦 Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is configured for easy deployment on Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Import the repository in Vercel
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Deploy!
 
-## Learn More
+### Vercel Configuration
 
-To learn more about Next.js, take a look at the following resources:
+The project is already configured for Vercel with:
+- Automatic Next.js detection
+- Image optimization enabled
+- Environment variables support (if needed)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+├── app/                    # Next.js app directory
+│   ├── about/             # About page
+│   ├── contact/           # Contact page
+│   ├── services/          # Services pages
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Homepage
+│   └── globals.css         # Global styles
+├── components/             # React components
+│   ├── layout/            # Header, Footer
+│   ├── sections/          # Homepage sections
+│   ├── forms/             # Form components
+│   └── ui/                # UI components
+├── lib/                    # Utilities and constants
+│   ├── constants.ts       # Site data and configuration
+│   ├── fonts.ts           # Font configuration
+│   └── animations.ts      # Animation variants
+└── public/                 # Static assets
+    └── images/            # Image assets
+```
 
-## Deploy on Vercel
+## 🎨 Key Sections
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Hero**: Animated hero section with background image carousel
+- **About**: Company history and statistics
+- **Services**: Service offerings with interactive cards
+- **Clients**: Scrolling client brand logos
+- **Featured Projects**: Project showcase
+- **Featured Stats**: Key statistics with circular thumbnails
+- **Work Process**: Company workflow visualization
+- **Testimonials**: Client testimonials carousel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Environment Variables
+
+No environment variables are required for basic functionality. If you need to add any, create a `.env.local` file:
+
+```env
+# Example (if needed)
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+```
+
+## 🔧 Configuration
+
+### Image Optimization
+
+Images are automatically optimized by Next.js. Ensure images are placed in the `public/images/` directory.
+
+### Fonts
+
+Custom fonts are configured in `lib/fonts.ts` and loaded via Next.js font optimization.
+
+## 📄 License
+
+Private project - All rights reserved
+
+## 👥 Contact
+
+B2C Advertisers
+- Email: bhanu@b2cadvertisers.com
+- Phone: +91 9246568474
+- Location: Hyderabad, India
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
+

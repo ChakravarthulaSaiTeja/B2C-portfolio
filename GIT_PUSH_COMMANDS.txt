@@ -1,0 +1,14 @@
+# Copy and paste these commands into your terminal:
+
+cd "/Users/saitejachakravarthula/Desktop/B2C ads/b2c-nextjs"
+
+git add -A
+
+git commit -m "Production ready: B2C Advertisers portfolio website"
+
+git remote add origin https://github.com/ChakravarthulaSaiTeja/B2C-portfolio.git || git remote set-url origin https://github.com/ChakravarthulaSaiTeja/B2C-portfolio.git
+
+git branch -M main
+
+git push -u origin main
+
