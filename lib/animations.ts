@@ -182,11 +182,7 @@ export const scrollReveal: Variants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.6, -0.05, 0.01, 0.99], // Custom easing curve for smooth animation
+      ease: [0.6, -0.05, 0.01, 0.99] as [number, number, number, number], // Custom easing curve for smooth animation
     },
-  },
-  viewport: {
-    once: true, // Only animate once when first entering viewport
-    margin: '-100px', // Start animation 100px before element enters viewport
   },
 }
